@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">SnapCode</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+    <!-- home banner -->
+    <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>The Platform for<br>Gamers</h2>
+                <p> Welcome to our innovative body posture-based game! Our game utilizes cutting-edge pose detection
+                    technology to create an engaging and interactive experience that promotes physical activity
+                    and mindfullness.</p>
+                <a href="#" class="btn">Join now</a>
+            </div>
+            <img src="agent1.1-removebg-preview.png" alt="agent pic">
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about animeX" id="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>At SnapCode, we're all about turning good posture into a fun and interactive experience.
+                Imagine this: playing a game where your body's movements are the key! Using advanced pose detection
+                technology, our system analyzes your body's posture in real-time. As you play the game, your movements
+                directly influence the gameplay, encouraging you to maintain correct posture throughout. <br>
+
+                <br><span class="additional-content" style="display: none;">Our goal is simple: to make improving your
+                    posture enjoyable and accessible to everyone. Whether you're a fitness enthusiast looking for a new
+                    challenge or simply want to ease discomfort from slouching at your desk, our posture-based game
+                    offers a refreshing solution. Say goodbye to stiffness and hello to a healthier, happier you!
+
+                    <br><br>Join us on this exciting journey towards better posture and overall well-being!</span>
+            </p>
+            <a href="#" class="btn" id="read-more-btn">Read more</a>
+        </div>
+        <img src="./videogame.png" alt="videogame">
+    </div>
+
+    <!-- games -->
+    <div class="games animeX" id="games">
+        <h2>Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="pc">PC Games</li>
+            <li class="list" data-filter="mobile">Android</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="PC">
+                <img src="games.jpg" alt="Games">
+                <div class="content">
+                    <h4>Subway Surfers</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>Free</span></p>
+                        <a href="#" class="btn">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="PC">
+                <img src="games2.jpg" alt="Games">
+                <div class="content">
+                    <h4>Temple Run</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>Free</span></p>
+                        <a href="#" class="btn">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact animeX" id="contact">
+        <img src="contact.png" alt="contact">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="email" id="email" placeholder="Your E-mail" required>
+            </div>
+            <div class="inputBx">
+                <p>Enter Phone no</p>
+                <input type="tel" id="phone" placeholder="Your Phone no">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea id="message" rows="4" placeholder="How can we help you" required></textarea>
+            </div>
+            <div class="inputBx">
+                <button type="submit" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">SnapCode</a>
+            <p><i class='bx bx-copyright'></i>2024 All Right Reserved</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                <li><a href="https://github.com/ahmad-rk02" target="_blank"> <i class='bx bxl-github'></i></a></li>
+                <li><a href="https://twitter.com/home" target="_blank"> <i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://www.instagram.com/akhan__2002/" target="_blank"> <i
+                            class='bx bxl-instagram'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
